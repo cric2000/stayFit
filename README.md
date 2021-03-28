@@ -1,2 +1,0 @@
-# stayFit
-Design
