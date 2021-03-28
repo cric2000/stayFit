@@ -1,0 +1,763 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+body{
+    background-color: #5B8C85;
+}
+.left{
+    width: 471px;
+    height: 100vh;
+    background-color: #ECCE6D;
+}
+
+.heading{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+}
+
+.contact-modal{
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.contact-modal:hover{
+    color: white;
+}
+
+.display-box{
+     display: none;
+     pointer-events: none;
+} 
+
+.display{
+    height: 40vh;
+    width: 12vw;
+    background-color: #ECCE6D;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 10;
+    right: 1%;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.display button{
+    border: none;
+    outline: none;
+    background:none;
+    color: black;
+    position: relative;
+    margin-top: -8%;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.cross:hover{
+    color: teal;
+}
+
+.cycle-img{
+    position: absolute;
+    z-index:10;
+    bottom: 0%;
+    right: 0%;
+}
+
+.text{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    display: flex;
+    height: 1vh;
+    width: 10vw;
+    justify-content: space-around;
+}
+
+
+.display img{
+    height: 30px;
+    width: 30px;
+    opacity: 0.8;
+}
+
+.display img:hover{
+    opacity: 1;
+}
+
+.sub-head{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.left-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 60vh;
+    margin-left: 8%;
+}
+
+.box{
+    height: 61px;
+    width: 341px;
+    border-radius: 20px;
+    background-color: #5B8C85;
+    text-align: left;
+    padding-left: 17px;
+    line-height: 61px;
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.one , .three{
+    color: white;
+}
+
+.two , .four{
+    background-color: white;
+}
+
+.image-svg{
+    position: absolute;
+    z-index:10;
+    bottom: 3%;
+    left: 14%;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    position: absolute;
+    top: 8%;
+    left: 38%;
+}
+
+.message1{
+    font-size: 36px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.message2{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.join{
+    width: 475px;
+    height: 480px;
+    border-radius: 20px;
+    background-color: #ECCE6D;
+    position: absolute;
+    top: 33%;
+    left: 46%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(0%,-50%);
+}
+
+footer p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 480px ;
+}
+
+input{
+   width: 341px;
+   height: 61px;
+   border-radius: 20px;
+   font-size: 28px;
+   outline: none;
+   border: none;
+   padding: 5px;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 300;
+}
+
+::placeholder{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: rgba(0,0,0,0.6);
+    padding: 15px;
+}
+
+.btn{
+    width: 158px;
+    height: 61px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #5B8C85;
+    color: white;
+}
+
+.btn:hover{
+    background-color:teal;
+}
+
+@media(max-width:1350px){
+    .left{
+        width: 100vw;
+        height: 55vh;
+        background-color: #ECCE6D;
+    }
+    .left-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 50vh;
+        width: 100vw;
+        margin-left: 8%;
+    }
+    .heading{
+        font-size: 28px;
+        width: 100vw;
+        margin-top: 3%;
+    }
+    .sub-head , .contact-modal{
+        font-size: 24px;
+    }
+    .box{
+        font-size: 22px;
+        height: 61px;
+    width: 341px;
+    }
+    .cycle-img svg{ 
+        height: 506px;
+        width: 409px ;
+    }
+    .image-svg{
+        position: absolute;
+        bottom: -45%;
+        left: 0%;
+    }
+    .image-svg svg{
+        height: 506px;
+        width: 339px ;
+
+    }
+    .cycle-img{
+        position: absolute;
+       top: 9.5%;
+      left: 50%;
+       
+    }
+    .join{
+        width: 355px;
+        height: 370px;
+        border-radius: 20px;
+        background-color: #ECCE6D;
+        position: absolute;
+        top: 75%;
+        left: 33%;
+        padding: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 360px ;
+    }
+    
+    input{
+       width: 241px;
+       height: 47px;
+       border-radius: 20px;
+       font-size: 18px;
+       outline: none;
+       border: none;
+       padding: 5px;
+       font-family: 'Quicksand', sans-serif;
+       font-weight: 300;
+    }
+    
+    ::placeholder{
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: rgba(0,0,0,0.6);
+        padding: 15px;
+    }
+    
+    .btn{
+        width: 108px;
+        height: 51px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #5B8C85;
+        color: white;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+        position: absolute;
+        z-index: 2;
+        top: 57%;
+        left: 25%;
+        
+    }
+
+    .contact-modal{
+        margin-right: 15%;
+        margin-top: 1%;
+    }
+    
+    .message1{
+        font-size: 28px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .message2{
+        font-size: 24px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    footer{
+        position: absolute;
+        bottom: -45%;
+        left: 40%;
+        transform: translate(0%,-40%);
+    }
+    
+    footer p{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .display{
+        height: 40vh;
+        width: 20vw;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 20;
+        right: -27%;
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30%;
+    }
+    .text{
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        display: flex;
+        height: 1vh;
+        width: 30vw;
+        justify-content: space-around;
+    }
+
+    .display button{
+        color:black;
+    }
+    
+}
+
+@media(max-width:900px){
+    .left{
+        width: 100vw;
+        height: 55vh;
+        background-color: #ECCE6D;
+    }
+    .left-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 50vh;
+        width: 100vw;
+        margin-left: 8%;
+    }
+    .heading{
+        font-size: 28px;
+        width: 100vw;
+        margin-top: 3%;
+    }
+    .sub-head , .contact-modal{
+        font-size: 24px;
+    }
+    .box{
+        font-size: 20px;
+        height: 61px;
+    width: 241px;
+    }
+    .cycle-img svg{ 
+        height: 506px;
+        width: 439px ;
+    }
+    .image-svg{
+        position: absolute;
+        bottom: -45%;
+        left: 0%;
+    }
+    .image-svg svg{
+        height: 406px;
+        width: 239px ;
+
+    }
+    .cycle-img{
+        position: absolute;
+       top: 8%;
+      left: 50%;
+       
+    }
+    .join{
+        width: 305px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: #ECCE6D;
+        position: absolute;
+        top: 75%;
+        left: 25%;
+        padding: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 310px ;
+    }
+    
+    input{
+       width: 241px;
+       height: 47px;
+       border-radius: 20px;
+       font-size: 18px;
+       outline: none;
+       border: none;
+       padding: 5px;
+       font-family: 'Quicksand', sans-serif;
+       font-weight: 300;
+    }
+    
+    ::placeholder{
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: rgba(0,0,0,0.6);
+        padding: 15px;
+    }
+    
+    .btn{
+        width: 108px;
+        height: 51px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #5B8C85;
+        color: white;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+        position: absolute;
+        z-index: 2;
+        top: 57%;
+        left: 15%;
+        
+    }
+
+    .contact-modal{
+        margin-right: 15%;
+        margin-top: 1%;
+    }
+    
+    .message1{
+        font-size: 24px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .message2{
+        font-size: 22px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    footer{
+        position: absolute;
+        bottom: -45%;
+        left: 35%;
+        transform: translate(0%,-35%);
+    }
+    
+    footer p{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .display{
+        height: 40vh;
+        width: 32vw;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 20;
+        right: -27%;
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30%;
+    }
+    .text{
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        display: flex;
+        height: 1vh;
+        width: 30vw;
+        justify-content: space-around;
+    }
+
+    .display button{
+        color:black;
+    }
+    
+}
+
+@media (max-width:700px){
+    .left{
+        width: 100vw;
+        height: 55vh;
+        background-color: #ECCE6D;
+    }
+    .left-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 50vh;
+        width: 100vw;
+        margin-left: 8%;
+    }
+    .heading{
+        font-size: 24px;
+        width: 100vw;
+        margin-top: 3%;
+    }
+    .sub-head , .contact-modal{
+        font-size: 18px;
+    }
+    .box{
+        font-size: 18px;
+        height: 61px;
+    width: 241px;
+    }
+    .cycle-img svg{ 
+        height: 476px;
+        width: 339px ;
+    }
+    .image-svg{
+        position: absolute;
+        bottom: -34%;
+        left: 1%;
+    }
+    .image-svg svg{
+        height: 376px;
+        width: 139px ;
+
+    }
+    .cycle-img{
+        position: absolute;
+       top: 14.5%;
+      left: 50%;
+       
+    }
+    .join{
+        width: 305px;
+        height: 320px;
+        border-radius: 20px;
+        background-color: #ECCE6D;
+        position: absolute;
+        top: 75%;
+        left: 20%;
+        padding: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 310px ;
+    }
+    
+    input{
+       width: 241px;
+       height: 47px;
+       border-radius: 20px;
+       font-size: 18px;
+       outline: none;
+       border: none;
+       padding: 5px;
+       font-family: 'Quicksand', sans-serif;
+       font-weight: 300;
+    }
+    
+    ::placeholder{
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        color: rgba(0,0,0,0.6);
+        padding: 15px;
+    }
+    
+    .btn{
+        width: 108px;
+        height: 51px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #5B8C85;
+        color: white;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 15vh;
+        position: absolute;
+        z-index: 2;
+        top: 57%;
+        left: 15%;
+        
+    }
+
+    .contact-modal{
+        margin-right: 15%;
+        margin-top: 1%;
+    }
+    
+    .message1{
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .message2{
+        font-size: 17px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    footer{
+        position: absolute;
+        bottom: -36%;
+        left: 29%;
+        transform: translate(0%,-29%);
+    }
+    
+    footer p{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .display{
+        height: 40vh;
+        width: 32vw;
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 20;
+        right: -27%;
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30%;
+    }
+    .text{
+        font-size: 12px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        display: flex;
+        height: 1vh;
+        width: 30vw;
+        justify-content: space-around;
+    }
+
+    .display button{
+        color:black;
+    }
+    
+    
+}
+
+@media(max-width:1700px){
+    .cycle-img{
+        position: absolute;
+        z-index:10;
+        bottom: 0%;
+        right: -14%;
+    }
+}
+
+
+
+
